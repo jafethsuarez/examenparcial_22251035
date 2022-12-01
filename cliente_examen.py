@@ -131,12 +131,21 @@ class Cliente():
                 print(A)
                 print(B)
                 #matriz_result = self.sec_mult(A, B)
-
                 matriz_ressec = self.sec_mult(A, B)
                 inicioS = time.time()
                 print(matriz_ressec)
                 finS = time.time()
                 print('\n\nMatriz  A y B se han multiplicado con exito en SECUENCIAL ha tardado ', finS-inicioS)
+                n_fil_A = len(A)  # Obtengo num de filas de A
+                n_col_A = len(A[0])  # Obtengo num de colunmas de A
+                n_fil_B = len(B)  # Obtengo num de filas de B
+                n_col_B = len(B[0]) # Obtengo num de filas de B
+
+                TaMA = "tamaño de A "+ str(n_fil_A) + ","+ str(n_col_A)
+                taMB = "tamaño de B "+ str(n_fil_B) + ","+ str(n_col_B)
+                print(TaMA)
+                print(taMB)
+
                 matriz_respar = self.par_mult(A, B)
                 inicioP = time.time()
                 print(matriz_respar)
