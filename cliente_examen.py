@@ -24,7 +24,7 @@ class Cliente():
         while True:
             msg = input(
                 '\nEscriba texto ?   ** Enviar = ENTER   ** Salir Chat = 1 \n')
-            with open("u22251035AI1.txt", "a") as f:
+            with open("examenparcial_22251035.txt", "a") as f:
                 f.write("\n" + nickname + ":" + msg)
                 f.close()
             if msg != '1':

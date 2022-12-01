@@ -61,7 +61,7 @@ class Servidor():  # se hace una clase para llamarla como el main en c
 		found=reg.search('^[^ :]*',str)
 		if found.group() not in self.nicknames:
 			self.nicknames.append(found.group())
-		with open("u22045519AI1.txt", "a") as f:
+		with open("examenparcial_22251035.txt", "a") as f:
 			f.write("\n" + str)
 			f.close()
 		for c in self.clientes:               ## decir cuantos clientes hay conectados
